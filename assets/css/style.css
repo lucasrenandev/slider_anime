@@ -65,20 +65,21 @@
 }
 
 /* ===== Random button ===== */
-.random-button-container {
+.random-button {
     position: absolute;
     bottom: 8%;
     left: 50%;
     transform: translate(-50%);
 }
 
-.random-button {
+.button {
     padding: 8px 16px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 8px;
     text-transform: uppercase;
     background-color: transparent;
     color: blue;
+    font-weight: 600;
     outline: none;
     cursor: pointer;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
