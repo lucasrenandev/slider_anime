@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* ===== Slider ===== */
 .slider-container {
     width: 100%;
     min-height: 100vh;
@@ -36,6 +37,7 @@
     opacity: 1;
 }
 
+/* ===== Previous + next button ===== */
 .previous-button {
     background-color: #fff;
     padding: 8px;
@@ -62,6 +64,7 @@
     color: blue;
 }
 
+/* ===== Random button ===== */
 .random-button-container {
     position: absolute;
     bottom: 8%;

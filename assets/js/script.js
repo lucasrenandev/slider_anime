@@ -1,7 +1,7 @@
 const previousButton = document.querySelector(".previous-button")
 const nextButton = document.querySelector(".next-button")
 const slideImage = document.querySelectorAll(".slide-image")
-const randomButtonContainer = document.querySelector(".random-button-container")
+const randomButton = document.querySelector(".random-button-container")
 
 let currentSlide = 0
 
@@ -43,4 +43,4 @@ function randomSlide() {
 
 nextButton.addEventListener("click", nextSlide)
 previousButton.addEventListener("click", previousSlide)
-randomButtonContainer.addEventListener("click", randomSlide)
+randomButton.addEventListener("click", randomSlide)
