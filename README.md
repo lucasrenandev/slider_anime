@@ -1,1 +1,1 @@
-Slider com imagens de Mangá
+# slide_anime
