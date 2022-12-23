@@ -4,20 +4,20 @@ const nextButton = document.querySelector(".next-button")
 const slideImage = document.querySelectorAll(".slide-image")
 const randomButton = document.querySelector(".random-button")
 
-// Slider atual
+// Slide atual
 let currentSlide = 0
 
-// Remover classe active 
+// Remover slide ativo
 function hideSlide() {
     slideImage.forEach(image => image.classList.remove("active"))
 }
 
-// Adicionar classe active
+// Adicionar slide ativo
 function showSlide() {
     slideImage[currentSlide].classList.add("active")
 }
 
-// Próximo slider
+// Próximo slide
 function nextSlide() {
     if(currentSlide < slideImage.length - 1) {
         currentSlide ++
@@ -29,7 +29,7 @@ function nextSlide() {
     showSlide()
 }
 
-// Slider anterior
+// Slide anterior
 function previousSlide() {
     if(currentSlide === 0) {
         currentSlide = slideImage.length - 1
@@ -41,13 +41,14 @@ function previousSlide() {
     showSlide()
 }
 
-// Slider aleatório
+// Slide aleatório
 function randomSlide() {
    currentSlide = Math.floor(Math.random() * slideImage.length)
    hideSlide()
    showSlide()
 }
 
+// Adicionar evento aos elementos
 nextButton.addEventListener("click", nextSlide)
 previousButton.addEventListener("click", previousSlide)
 randomButton.addEventListener("click", randomSlide)
